@@ -1,26 +1,133 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 
 body {
-    background-color: rgba(0, 0, 0, 0.92);
+    background-color: rgb(0, 0, 0);
+    
 }
 
-.imagembanner {
-  margin-left: 0;
-  width: 100%;
+nav.container-navbar {
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+a {
+  color: rgb(0, 0, 0);
+}
+a:hover {
+  color: #2de947;
+}
+.navbar-item {
+  border: 1px solid #2de947;
+  padding: 0px 2px;
+  margin: 13px;
+  border-radius: 99px;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(0, 0, 0);
+  background-color: #2de947;
+  width: 100px;
+  max-height: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.navbar-item:hover {
+  background-color:black;
+  }
 
+h1 {
+  display: block;
+  font-size: 3em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+  color: #2de947;
+  text-align: center;
+}
+
+p {
+    color:white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 18px;
+}
+
+header {
+  display: block;
+  text-align: center;
+  background-image: url("logogif.gif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -3em;
+  height: 400px;
+ }
+
+ .menu section {
+  border: none;
 }
 
 .menu {
-  display: flex; 
-
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
 
 .button {
 
-    font-family:'Architects Daughter', cursive;
-    font-size: 20px;
-    color:rgb(182, 3, 0);
-    border-radius: 5px;
-    
+  font-family:'Architects Daughter', cursive;
+  font-size: 18px;
+  color:rgb(14, 5, 5);
+  border-radius: 5px;
+}
+ 
+
+
+.input {
+  border-radius: 5px;
+  font-size: 18px;
+  width: 150px;
+}
+
+
+.main{
+  margin: 0 20px;
+}
+
+footer {
+  padding: 1rem;
+  background-image: linear-gradient(to bottom, black, #2de947 );
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+  color: #000000;
+}
+
+h2 {
+  margin-top: 100px;
+  font-size:20px;
+}
+
+.social-media {
+  margin: 2px;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media-list-item {
+  display: block;
+  margin: 1rem;
+}
+
+.social-media-list-item img {
+  width: 100%;
+  max-width: 20px;
 }
