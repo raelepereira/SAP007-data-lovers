@@ -2,10 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 
+
 body {
     background-color: rgb(0, 0, 0);
-    
-}
+  }
 
 nav.container-navbar {
   background-color: rgb(0, 0, 0);
@@ -23,7 +23,7 @@ a:hover {
   border: 1px solid #2de947;
   padding: 0px 2px;
   margin: 13px;
-  border-radius: 99px;
+  border-radius: 70px;
   font-family: 'Architects Daughter', cursive;
   font-size: 18px;
   font-weight: bold;
@@ -36,25 +36,6 @@ a:hover {
 }
 .navbar-item:hover {
   background-color:black;
-  }
-
-h1 {
-  display: block;
-  font-size: 3em;
-  margin-block-start: 0.67em;
-  margin-block-end: 0.67em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  font-weight: bold;
-  font-family: 'Shadows Into Light', cursive;
-  color: #2de947;
-  text-align: center;
-}
-
-p {
-    color:white;
-    font-family: 'Architects Daughter', cursive;
-    font-size: 18px;
 }
 
 header {
@@ -64,8 +45,24 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position-y: -3em;
-  height: 400px;
+  height: 300px;
+  padding-top: 30px;
  }
+
+h1 {
+  display: block;
+  font-size: 4em;
+  font-weight: bold;
+  font-family: 'Shadows Into Light', cursive;
+  color: #2de947;
+  text-align: center;
+}
+
+p {
+    color:white;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 1.5em;;
+}
 
  .menu section {
   border: none;
@@ -75,27 +72,80 @@ header {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  padding-bottom: 80px;
 }
 
-.button {
-
+.button, .input {
   font-family:'Architects Daughter', cursive;
   font-size: 18px;
   color:rgb(14, 5, 5);
   border-radius: 5px;
 }
  
-
-
 .input {
-  border-radius: 5px;
-  font-size: 18px;
   width: 150px;
 }
 
+.container-cards {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  background-color: #000000;
+  display: grid;
+    grid-template-columns: repeat(3, max-content);
+    grid-gap: 30px;
+}
 
-.main{
-  margin: 0 20px;
+.container-cards > section {
+flex: 1 1 10px;
+}
+
+section.card {
+  margin: 10px;
+  padding: 5px;
+  border: solid 4px #020202;
+  border-radius: 25px;
+  width: 270px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color: black;
+}
+
+.card-img {
+  margin: 0px;
+  border-radius: 15px;
+  max-width: 270px;
+}
+
+.name {
+  text-align: center;
+  font-family:'Architects Daughter', cursive;
+  font-size: 22px;
+  font-weight: 800;
+  padding: 3px 5px;
+  color: #ffffff; 
+}
+
+.info {
+  text-align: center;
+  margin: 0px 25px;
+  font-family:'Architects Daughter', cursive;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 1px 11px;
+  color: #ffffff;
+  display: block;
+}
+
+.list {
+  list-style: none;
 }
 
 footer {
@@ -131,3 +181,4 @@ h2 {
   width: 100%;
   max-width: 20px;
 }
+

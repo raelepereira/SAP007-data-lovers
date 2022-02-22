@@ -1,8 +1,7 @@
+import data from './data/rickandmorty/rickandmorty.js';
 import {} from './data.js';
 
-import data from './data/rickandmorty/rickandmorty.js';
-
-function showCards(data) {
+function exibitCards(data) {
     document.getElementById('card-container').innerHTML = data.map((item) => `
       <section class="card">
         <figure class="card-figure">
@@ -24,8 +23,10 @@ function showCards(data) {
    `).join("");
   }
   
-  showCards(data.results);
+  exibitCards(data.results);
   
+/*let arrayPrincipal = ['banana', 'maçã', 'caju', 'morango']
 
+let arrayFiltrado = arrayPrincipal.filter( function(fruta){return fruta == 'caju'})
 
-console.log(example, data);
+console.log('frutas filtradas: ', arrayFiltrado);*/
