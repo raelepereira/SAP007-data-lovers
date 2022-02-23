@@ -1,32 +1,34 @@
 import data from './data/rickandmorty/rickandmorty.js';
 import {} from './data.js';
 
-function exibitCards(data) {
-    document.getElementById('card-container').innerHTML = data.map((item) => `
-      <section class="card">
-        <figure class="card-figure">
-        <img class="card-img" src="${item.image}">
-        </figure>
-        <section class="container-name">
-          <h3 class="name">${item.name}</h3>
-        </section>
-        <section class="info">
-          <ul class="list">
-            <li class="list-item">Status: ${item.status}</li>
-            <li class="list-item">Gender: ${item.gender}</li>
-            <li class="list-item">Species: ${item.species}</li>
-            <li class="list-item">Appears in: ${item.episode.length} episodes</li>
-            <li class="list-item">Origin: ${item.origin.name}</li>
-          </ul>
-        </section>
+
+
+
+function showCards(data) {
+  document.getElementById('card-container').innerHTML = data.map((item) => `
+
+    <section id= "card-info" class="card">
+        
+      <img class="card-img" src="${item.image}">
+        
+      <section class="container-name">
+        <h3 class="name">${item.name}</h3>
       </section>
-   `).join("");
-  }
-  
-  exibitCards(data.results);
-  
-/*let arrayPrincipal = ['banana', 'maçã', 'caju', 'morango']
 
-let arrayFiltrado = arrayPrincipal.filter( function(fruta){return fruta == 'caju'})
+      <section id="info-card"class="info">
+        <p class="list-item">Status: ${item.status}</p>
+        <p class="list-item">Gender: ${item.gender}</p>
+        <p class="list-item">Species: ${item.species}</p>
+        <p class="list-item">Appears in: ${item.episode.length} episodes</p>
+        <p class="list-item">Origin: ${item.origin.name}</p>
+      </section>
 
-console.log('frutas filtradas: ', arrayFiltrado);*/
+    </section>
+
+  `).join("");
+}
+
+  
+  showCards(data.results);
+
+  
