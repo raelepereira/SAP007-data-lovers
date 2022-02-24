@@ -2,173 +2,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 body {
-  background: black;
+  background-image: url(./img/backgroundimage.jpeg); 
+  background-attachment: fixed; /*FAZ COM QUE A IMAGEM NÃO ROLE COM A PÁGINA*/  
+  background-repeat: no-repeat; 
+  background-size: 100%; /*AJUSTE DENTRO DA TELA DISPONÍVEL*/
+  background-position-y: -150px;  
 }
 
-header {
+
+/*HEADER*/
+.cabecalho {
   position: absolute;
-  top: 0;
-  left: 0;
+  box-sizing: border-box;
   width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 100px;
-  z-index: 100;
-}
-
-header.logo1 img{
-  max-width: 100px;
-
-}
-
-.navigation {
   display:flex;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
 }
-
-.navigation li {
-  list-style: none;
-  margin: 0 10px;
+.cabecalho-navegacao{
+  width: 100%;
 }
-
-.navigation li button {
-  color: #2de947;
-  text-decoration: none;
-  font-family: 'Architects Daughter', cursive;
-  font-weight: 500;
-  letter-spacing: 1px;
+.cabecalho-imagem{
+  position:relative;
+  top: -100px;
 }
-
-.btn1 {
-  background: none;
-  font-size: 15px;
+nav li{
   text-align: center;
-  border-radius: 0.5em;
-  border: 1px solid #2de947
+  display: inline;
+  margin-top: 1rem;
+  margin-right: .7rem;
+  margin-bottom: 1.25rem;
+  margin-left: .7rem;
 }
-
-.btn1 a {
-  text-decoration: none;
-  color: #2de947;
-}
-
-
-.banner {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  padding: 0 100px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-}
- .banner .bg {
-  background-image: linear-gradient(to margin-right, black);
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width:100%;
-  object-fit:cover;
- }
-
-.content {
-  position: relative;
-  z-index: 1;
-  max-width: 550px;
-}
-
-.logo {
-  max-width: 350px;
-}
-
-.banner .content h4 {
-  color:rgb(255, 255, 2555, 0.5);
-  font-weight: 500;
-}
-
-.banner .content h4 span {
-  font-family: Arial, Helvetica, sans-serif;
-  padding: 0 10px;
-  border-right: 1px solid rgb(255, 255, 2555, 0.5);
-}
-
-.banner .content h4 span:first-child {
-  padding-left: 0;
-}
-
-.banner .content h4 span:last-child {
-  border-right: none;
-}
-
-.banner .content p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: 300;
-  line-height: 1.5em;
-  color: #fff;
-  margin: 5px 0 20px;
-}
-
-.banner .content .button {
-  position: relative;
-  display: inline-block;
-  margin-right: 10px;
-  padding: 6px 20px;
-  text-decoration: none;
-  font-weight: 500;
-  letter-spacing: 1px;
-}
-
-.btn {
-  --color: #2DE947;
-  --color2: rgb(10, 25, 30);
-  padding: 0.8em 1.75em;
-  background-color: transparent;
-  border-radius: 6px;
-  border: .3px solid var(--color);
-  transition: .5s;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-  z-index: 1;
-  font-weight: 300;
-  font-size: 16px;
-  font-family: 'Architects Daughter', cursive;
+nav li a{
+  font-family: "Shadows Into Light";
+  font-size: 2rem;
   text-transform: uppercase;
-  color: var(--color);
- }
- 
- .btn::after, .btn::before {
-  content: '';
-  display: block;
-  height: 100%;
-  width: 100%;
-  transform: skew(90deg) translate(-50%, -50%);
-  position: absolute;
-  inset: 50%;
-  left: 25%;
-  z-index: -1;
-  transition: .5s ease-out;
-  background-color: var(--color);
- }
- 
- .btn::before {
-  top: -50%;
-  left: -25%;
-  transform: skew(90deg) rotate(180deg) translate(-50%, -50%);
- }
- 
- .btn:hover::before {
-  transform: skew(45deg) rotate(180deg) translate(-50%, -50%);
- }
- 
- .btn:hover::after {
-  transform: skew(45deg) translate(-50%, -50%);
- }
- 
- .btn:hover {
-  color: var(--color2);
- }
- 
- .btn3 a {
-   text-decoration: none;
- }
+  color: #33dd50;
+  font-weight: bold;
+  text-decoration:none;
+  padding-right: 6rem;
+}
+nav a:hover{
+  transition: 3s;
+  font-size: 3rem;
+  color: rgb(27, 163, 152);
+}
+/*MAIN*/
+.descricao{
+  display:inline;
+  position: relative;
+  width: 60%;
+  top: 5rem;
+}
+.descricao-imagem{
+  width: 50%;
+}
+.descricao-informacao-div1{
+  color: azure;
+  font-family: "Architects Daughter";
+  max-width: 60%;
+  max-height: 50%;
+  margin: 0 1rem;
+  padding: 0 3rem;
+}
+.descricao-informacao-div2{
+  color: aliceblue;
+  font-family: "Architects Daughter", cursive;
+  max-width: 50%;
+  max-height: 50%;
+  text-align: justify;
+  margin: 0 1rem;
+  padding: 0 3rem;
+}
+.descricao-informacoes-h4{
+  position: relative;
+  top: 52px;
+  display: inline;
+  color: white;
+  width: 10rem;
+  margin: 0 2rem ;
+}
+.descricao-informacoes-p{
+  position: relative;
+  font-family: "Architects Daughter", cursive;
+  font-size: 20px;
+  display: inline;
+  color: white;
+  margin-right: 20px;
+}

@@ -13,21 +13,21 @@ body {
 .header-banner {
   display: block;
   align-items: center;;
-  background-image: url("logogif.gif");
+  background-image: url("./img/logogif.gif");
   background-repeat: no-repeat;
   height: 250px;
   max-width: 900px;
   margin: auto;
 }
 
-.titulo-menu {
+.titulo-menu  {
   display: block;
   font-size: 4em;
   margin: auto;
   padding-top: 20vh;
   font-weight: bold;
   font-family: 'Shadows Into Light', cursive;
-  color: #2de947;
+  color: #10aec5;
   max-width: 1000px;
   text-align: center;
 }
@@ -38,14 +38,13 @@ p {
   font-size: 1.5em;;
 }
 
-
 .menu {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   max-width: 1100px;
   margin: auto;
-  
+  padding-bottom: 50px;
 }
 
 .menu section {
@@ -53,17 +52,16 @@ p {
   margin: 50px;
 }
 
-
-
 .button, .input {
   font-family:'Architects Daughter', cursive;
   font-size: 18px;
-  color:rgb(14, 5, 5);
+  background-color: white;
+  color:black;
   border-radius: 5px;
 }
  
 .input {
-  width: 150px;
+  width: 185px;
 }
 
 .container-cards {
@@ -75,61 +73,57 @@ p {
   flex-wrap: wrap;
   justify-content: center;
   align-content: center;
-  background-color: #000000;
+  background-color: #000;
   display: grid;
     grid-template-columns: repeat(3, max-content);
     grid-gap: 30px;
     transition: all 0,3%;
 }
 
-
 section .card {
   margin: 20px;
-  border: solid 4px #2de947 ;
+  border: solid 4px #bff1fc;
   border-radius: 25px;
   max-width: 250px;
-  background-color: black ;
+  background-color: #bff1fc;/*#4fd361;*/
   text-align: center;
+ 
 }
-
 
 .container-cards :hover{
   transition: 0.3%;
   transform: scale(1.10,1.10);
 }
 
-
 .card-img {
-  border-radius: 50%;
-  max-width: 150px;
-  margin: 15px;
+  border-radius: 7%;
+  max-width: 246px;
+  margin: 2px;
 }
 
 .name {
   text-align: center;
   margin: 10px;
   font-family:'Architects Daughter', cursive;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 800;
   padding: auto;
-  color: #ffffff; 
+  color: #000000; 
 }
 
 .info {
   text-align: center;
   margin: 15px;
   font-family:'Architects Daughter', cursive;
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
   color: #ffffff;
   
-  
 }
-
 
 footer {
   padding: 1rem;
-  background-image: linear-gradient(to bottom, black, #2de947 );
+  background-image: linear-gradient(to bottom, black, #bff1fc  );
   text-align: center;
   font-family: 'Architects Daughter', cursive;
   font-size: 18px;
