@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <title>Data Lovers</title>
+    <title>Rick & Morty | Cards</title>
     <link rel="stylesheet" href="style.css" />
     <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
   </head>
@@ -13,28 +13,32 @@
     <header class="header-banner">
       </header>
       <main>
-  </section>
  <h1 class="titulo-menu">ALL CHARACTERS</h1>
+  <!--FILTROS-->
     <section class="menu">
        <p class="paragrafo">SORT BY:</p>
+        <!--FILTRAR POR ORDEM ALFABÉTICA-->
         <select id="filter-AZ" class="select-az-za button">A-Z/Z-A>
           <option value="A-Z/Z-A" selected disabled>A-Z/Z-A</option>
           <option class="sel-az" value="AZ">Name: A-Z</option>
           <option class="sel-za" value="ZA">Name: Z-A</option>
         </select>
+           <!--FILTRAR POR GÊNERO-->
         <select id="filter-gender" class="selec-genero button">
           <option value="genero" selected disabled>⚧ Gender</option>
           <option class="sel-genero" value="Male">♂️ Male</option>
           <option class="sel-genero" value="Female">♀️ Female</option>
           <option class="sel-genero" value="Genderless">Genderless</option>
-          <option class="sel-genero" value="Unknown">❓ Unknown</option>
+          <option class="sel-genero" value="unknown">❓ Unknown</option>
         </select>
+        <!--FILTRAR POR STATUS DE VIDA-->
         <select id="filter-status" class="sel-status button">
           <option value="status" selected disabled>❓ Status</option>
           <option class="sel-status" value="Alive">💚 Alive</option>
           <option class="sel-status" value="Dead">☠️ Dead</option>
           <option class="sel-status" value="Unknown">❓ Unknown</option>
         </select>
+        <!--FILTRAR POR ESPÉCIE-->
         <select id="filter-species" class="sel-especie button">
           <option value="especie" selected disabled>Species</option>
           <option class="sel-status" value="humano">Human</option>
@@ -45,9 +49,12 @@
           <option class="sel-status" value="Robot">Robot</option>
           <option class="sel-status" value="Unknown">Unknown</option>
         </select>
+        <!--BOTÃO PARA LIMPAR-->
         <button class="button">Clear</button>
+        <!--INPUT PARA PESQUISAR POR NOME-->
         <input type="search" id="filter-input" class="input" placeholder="search a character">
       </section>
+       <!--LOCAL DOS CARDS-->
       <section id="card-container" class="container-cards"></section>
 </main>
 
@@ -57,22 +64,22 @@
     <ul class="social-media-list">
       <li class="social-media-list-item">
         <a href="https://github.com/raelepereira">
-          <img src="./img/githubicon.png" alt="github-raele" />
+          <img src="./img/github.png" alt="github-raele" />
         </a>
       </li>
       <li class="social-media-list-item">
         <a href="https://github.com/raynarapimenta">
-          <img src="./img/githubicon.png" alt="github-raynara" />
+          <img src="./img/github.png" alt="github-raynara" />
         </a>
       </li>
       <li class="social-media-list-item">
         <a href="https://www.linkedin.com/in/raele-pereira-59b804201/">
-          <img src="./img/linkedinicon.png" alt="linkedin-raele" />
+          <img src="./img/linkdin.png" alt="linkedin-raele" />
         </a>
       </li>
       <li class="social-media-list-item">
         <a href="https://www.linkedin.com/in/raynara-pimenta-308b2514b/">
-          <img src="./img/linkedinicon.png" alt="linkedin-raynara" />
+          <img src="./img/linkdin.png" alt="linkedin-raynara" />
         </a>
       </li>
     </ul>

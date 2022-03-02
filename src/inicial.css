@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
 body {
-  background-image: url(./img/backgroundimage.jpeg); 
+  background-image: url(./img/bgggg.jpeg); 
   background-attachment: fixed; /*FAZ COM QUE A IMAGEM NÃO ROLE COM A PÁGINA*/  
   background-repeat: no-repeat; 
   background-size: 100%; /*AJUSTE DENTRO DA TELA DISPONÍVEL*/
-  background-position-y: -150px;  
+ background-position-y: -150px;  
 }
 
 
@@ -49,6 +49,7 @@ nav a:hover{
   color: rgb(27, 163, 152);
 }
 /*MAIN*/
+
 .descricao{
   display:inline;
   position: relative;
@@ -56,7 +57,7 @@ nav a:hover{
   top: 5rem;
 }
 .descricao-imagem{
-  width: 50%;
+  width: 30%;
 }
 .descricao-informacao-div1{
   color: azure;
@@ -91,3 +92,29 @@ nav a:hover{
   color: white;
   margin-right: 20px;
 }
+
+/* Smartphones (600px para baixo) */
+@media only screen and (max-width: 600px) {
+
+}
+
+/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/*Dispostivos Médios (Tablets deitados, 768px para cima) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
+@media only screen and (min-width: 1200px) {
+
+}
+
