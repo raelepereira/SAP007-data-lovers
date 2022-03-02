@@ -10,6 +10,32 @@ body {
   background-color: rgb(0, 0, 0); 
 }
 
+nav li{
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-right: .7rem;
+  margin-bottom: 1.25rem;
+  margin-left: 3.9rem;
+
+}
+
+nav li a{
+  font-family: "Shadows Into Light";
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #33dd50;
+  font-weight: bold;
+  text-decoration:none;
+  padding-right: 6rem;
+}
+nav a:hover{
+  transition: 3s;
+  font-size: 3rem;
+  color: rgb(27, 163, 152);
+}
+
 .header-banner {
   display: block;
   align-items: center;
@@ -27,7 +53,7 @@ body {
   padding-top: 20vh;
   font-weight: bold;
   font-family: 'Shadows Into Light', cursive;
-  color: #10aec5;
+  color: #4fd361;
   max-width: 1000px;
   text-align: center;
 }
@@ -82,10 +108,10 @@ p {
 
 section .card {
   margin: 20px;
-  border: solid 4px #bff1fc;
+  border: solid 4px #4fd361;/*#bff1fc;*/
   border-radius: 25px;
   max-width: 250px;
-  background-color: #bff1fc;/*#4fd361;*/
+  background-color: #4fd361;
   text-align: center;
  
 }

@@ -21,10 +21,12 @@ body {
 }
 .cabecalho-navegacao{
   width: 100%;
+  display:flex;
 }
 .cabecalho-imagem{
   position:relative;
   top: -100px;
+  
 }
 nav li{
   text-align: center;
@@ -36,7 +38,7 @@ nav li{
 }
 nav li a{
   font-family: "Shadows Into Light";
-  font-size: 2rem;
+  font-size: 1.6rem;
   text-transform: uppercase;
   color: #33dd50;
   font-weight: bold;
