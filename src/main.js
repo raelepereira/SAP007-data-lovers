@@ -1,6 +1,8 @@
-import {} from "./data.js";
-import dadosRickAndMorty from "./data/rickandmorty/rickandmorty.js";
+import data from "./data/rickandmorty/rickandmorty.js";
+import {ordering, searchName } from "./data.js";
 
+
+const searchInput = document.getElementById("filter-input");
 
 function showCards(data) {
   document.getElementById('card-container').innerHTML = data.map((item) => `
@@ -25,14 +27,44 @@ function showCards(data) {
   `).join("");
 }
 
-showCards(dadosRickAndMorty.results);
+showCards(data.results);
 
+//FUNÇÃO DE ORDERNAR A-Z e (Z-A < não funciona)
+function orderCharacter(evt) {
+  evt.preventDefault();
+  const sortBy = ordering(data.results, evt.target.value);
+  showCards(sortBy);  
+  }
+
+document.getElementById("ordering-AZ").addEventListener("change", orderCharacter);
+
+
+//função de recarregar a página
+var btn = document.querySelector("#clear");
+btn.addEventListener("click", function() {
+    
+    location.reload();
+});
+
+
+//função de procurar pelo nome (input)
+function searchByName(e) {
+  const charactersByName = searchName(data.results, e.target.value);
+  showCards(charactersByName);
+}
+searchInput.addEventListener("keyup", searchByName);
+
+
+
+ 
+
+/*
 const seletorGenero = document.getElementById("filter-gender"); // CONST COM O SELETOR
 
 seletorGenero.addEventListener("change", (event) => {
-  const filtroGenero = dadosRickAndMorty.results.filter((item) => {
+  const filtroGenero = data.results.filter((item) => {
     return item.gender === event.target.value
   });
   console.log(filtroGenero);
-});
+});*/
 

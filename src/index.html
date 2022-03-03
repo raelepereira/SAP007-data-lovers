@@ -12,21 +12,25 @@
   <body>
     <nav>
       <ul class="cabecalho-navegacao">
-          <li><a href="inicial.html">                                                Home</a></li>
+          <li><a href="inicial.html">                                                   Home</a></li>
+          <li><a href="https://www.imdb.com/title/tt2861424/episodes">               Seasons</a></li>
+          <li><a href="https://www.imdb.com/title/tt2861424/episodes?year=2017">    Episodes</a></li>
+          <li><a href="https://www.adultswim.com/streams/rick-and-morty">          Watch Now</a></li>
       </ul>
   </nav>
     <header class="header-banner">
       </header>
       <main>
- <h1 class="titulo-menu">ALL CHARACTERS</h1>
+ <h1 class="titulo-menu">
+   CHARACTERS</h1>
   <!--FILTROS-->
     <section class="menu">
        <p class="paragrafo">SORT BY:</p>
         <!--FILTRAR POR ORDEM ALFABÉTICA-->
-        <select id="filter-AZ" class="select-az-za button">A-Z/Z-A>
-          <option value="A-Z/Z-A" selected disabled>A-Z/Z-A</option>
+        <select id="ordering-AZ" class="select-az-za button">A-Z>
+          <option value="A-Z/Z-A" selected disabled>A-Z</option>
           <option class="sel-az" value="AZ">Name: A-Z</option>
-          <option class="sel-za" value="ZA">Name: Z-A</option>
+          <option class="sel-az" value="ZA">Name: Z-A</option>
         </select>
            <!--FILTRAR POR GÊNERO-->
         <select id="filter-gender" class="selec-genero button">
@@ -55,7 +59,7 @@
           <option class="sel-status" value="Unknown">Unknown</option>
         </select>
         <!--BOTÃO PARA LIMPAR-->
-        <button class="button">Clear</button>
+        <button id="clear" class="button">Clear</button>
         <!--INPUT PARA PESQUISAR POR NOME-->
         <input type="search" id="filter-input" class="input" placeholder="search a character">
       </section>
