@@ -30,13 +30,13 @@ function showCards(data) {
 showCards(data.results);
 
 //FUNÇÃO DE ORDERNAR A-Z e (Z-A < não funciona)
-function orderCharacter(evt) {
+function sortCharacter(evt) {
   evt.preventDefault();
   const sortBy = ordering(data.results, evt.target.value);
   showCards(sortBy);  
   }
 
-document.getElementById("ordering-AZ").addEventListener("change", orderCharacter);
+document.getElementById("ordering-AZ").addEventListener("change", sortCharacter);
 
 
 //função de recarregar a página

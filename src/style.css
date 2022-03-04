@@ -11,7 +11,7 @@ body {
 }
 
 nav li{
-  display: inline-block;
+  display: flex;
   justify-content: center;
   align-items: center;
   margin-top: 1rem;
@@ -35,6 +35,13 @@ nav a:hover{
   font-size: 3rem;
   color: rgb(27, 163, 152);
 }
+.cabecalho-navegacao{
+  width: 100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 
 .header-banner {
   display: block;
@@ -151,7 +158,7 @@ section .card {
 
 footer {
   padding: 1rem;
-  background-image: linear-gradient(to bottom, black, #bff1fc  );
+  background-image: linear-gradient(to bottom, black, #4fd361  );
   text-align: center;
   font-family: 'Architects Daughter', cursive;
   font-size: 18px;
