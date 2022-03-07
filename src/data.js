@@ -3,15 +3,23 @@
   }*/
 
 
-//FUNÇÃO DE ORDERNAR A-Z e (Z-A < não funciona)
-  export const ordering = (data, sort) => {
+//FUNÇÃO DE ORDERNAR A-Z e Z-A
+  export const ordering = (data, sorted) => {
   
-     g if (sort === "AZ") {  
+      if (sorted === "AZ") {  
       return data.sort((a, b) => a.name < b.name ? -1 : 1)     
     } else {
       return data.sort((a, b) => a.name > b.name ? -1 : 1)
    } 
   };
+
+
+  export const filterEspecies = (data) => {
+    return data.filter(item => {
+     return item.especie === true;
+    })
+    }
+
 
 //função de procurar pelo nome (input)
   export const searchName = (data, condition) => {

@@ -1,8 +1,9 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import {ordering, searchName } from "./data.js";
+import {ordering, searchName, filterEspecies} from "./data.js";
 
 
-const searchInput = document.getElementById("filter-input");
+const searchInput = document.getElementById("search-input");
+const getSpescies = document.getElementById("filter-spescies");
 
 function showCards(data) {
   document.getElementById('card-container').innerHTML = data.map((item) => `
@@ -29,7 +30,7 @@ function showCards(data) {
 
 showCards(data.results);
 
-//FUNÇÃO DE ORDERNAR A-Z e (Z-A < não funciona)
+//FUNÇÃO DE ORDERNAR A-Z e Z-A 
 function sortCharacter(evt) {
   evt.preventDefault();
   const sortBy = ordering(data.results, evt.target.value);
@@ -57,6 +58,8 @@ searchInput.addEventListener("keyup", searchByName);
 
 
  
+
+
 
 /*
 const seletorGenero = document.getElementById("filter-gender"); // CONST COM O SELETOR
