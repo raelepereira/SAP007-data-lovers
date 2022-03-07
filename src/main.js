@@ -35,7 +35,7 @@ function sortCharacter(evt) {
   evt.preventDefault();
   const sortBy = ordering(data.results, evt.target.value);
   showCards(sortBy);  
-  }
+}
 
 document.getElementById("ordering-AZ").addEventListener("change", sortCharacter);
 
@@ -44,7 +44,7 @@ document.getElementById("ordering-AZ").addEventListener("change", sortCharacter)
 var btn = document.querySelector("#clear");
 btn.addEventListener("click", function() {
     
-    location.reload();
+  location.reload();
 });
 
 

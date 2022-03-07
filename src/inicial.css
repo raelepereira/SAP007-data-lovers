@@ -1,122 +1,150 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 
-body {
-  background-image: url(./img/bgggg.jpeg); 
-  background-attachment: fixed; /*FAZ COM QUE A IMAGEM NÃO ROLE COM A PÁGINA*/  
-  background-repeat: no-repeat; 
-  background-size: 100%; /*AJUSTE DENTRO DA TELA DISPONÍVEL*/
- background-position-y: -150px;  
+*{
+  margin: 0;
+  padding: 0;
 }
 
+body {
+  background-image: url(./img/bgggg.png);
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 /*HEADER*/
 .cabecalho {
-  position: absolute;
-  box-sizing: border-box;
-  width: 100%;
   display:flex;
-  padding-top: .75rem;
-  padding-bottom: .75rem;
+  margin-top: 20px;
 }
+
 .cabecalho-navegacao{
-  width: 100%;
-  display:flex;
+  display: inline-block;
 }
-.cabecalho-imagem{
-  position:relative;
-  top: -100px;
-  
+
+.cabecalho img {
+  margin-right: 10px;
+  margin-left: 50px;
 }
+
+nav{
+  margin-left: 30px;
+  display: block;
+}
+
 nav li{
-  text-align: center;
   display: inline;
-  margin-top: 1rem;
-  margin-right: .7rem;
-  margin-bottom: 1.25rem;
-  margin-left: .7rem;
+  margin-left: 30px;
 }
+
 nav li a{
   font-family: "Shadows Into Light";
-  font-size: 1.6rem;
+  font-size: 30px;
   text-transform: uppercase;
   color: #33dd50;
   font-weight: bold;
   text-decoration:none;
-  padding-right: 6rem;
 }
+
 nav a:hover{
   transition: 3s;
   font-size: 3rem;
   color: rgb(27, 163, 152);
 }
-/*MAIN*/
 
-.descricao{
-  display:inline;
-  position: relative;
-  width: 60%;
-  top: 5rem;
+/*MAIN*/
+main{
+  max-width: 40%;
+  margin-left: 50px;
+  margin-top: 30px;
 }
+
 .descricao-imagem{
-  width: 30%;
+  width: 100%;
+  margin-top: 10%;
+  margin-bottom: 2%; 
 }
-.descricao-informacao-div1{
-  color: azure;
+
+main  h1{
   font-family: "Architects Daughter";
-  max-width: 60%;
-  max-height: 50%;
-  margin: 0 1rem;
-  padding: 0 3rem;
-}
-.descricao-informacao-div2{
-  color: aliceblue;
-  font-family: "Architects Daughter", cursive;
-  max-width: 50%;
-  max-height: 50%;
-  text-align: justify;
-  margin: 0 1rem;
-  padding: 0 3rem;
-}
-.descricao-informacoes-h4{
-  position: relative;
-  top: 52px;
-  display: inline;
   color: white;
-  width: 10rem;
-  margin: 0 2rem ;
+  font-size: 25px;
+  margin: 20px;
+  text-align: center;
 }
-.descricao-informacoes-p{
-  position: relative;
+
+main p{
   font-family: "Architects Daughter", cursive;
   font-size: 20px;
-  display: inline;
+  text-align:center;
   color: white;
-  margin-right: 20px;
+}
+
+
+/* Dispostivos Largos (laptops/desktops, 992px para cima) */
+@media only screen and (max-width: 995px) {
+
+  body{
+    background-image: url(./img/tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #252525;
+  }
+
+  .cabecalho{
+    max-width: 100%;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav{
+    margin-right: 30px;
+  }
+
+  .cabecalho img {
+    margin: 20px 0px 30px 0px;
+  }
+
+  nav li{
+    margin: 10px;
+    font-size: 10px;
+  }
+
+  main{
+    max-width: 50%;
+    
+  }
 }
 
 /* Smartphones (600px para baixo) */
 @media only screen and (max-width: 600px) {
 
+  body{
+    background-image: url(./img/tablet.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #252525;
+  }
+
+  .cabecalho img {
+    margin: 20px 0px 30px 0px;
+    width: 150px;
+  }
+
+  nav li{
+    margin: 5px;
+  }
+
+  nav li a {
+    font-size: 15px;
+  }
+
+  main{
+    max-width: 70%;
+    margin: auto 10px;
+  }
+  
 }
-
-/* Dispositivos um pouco maiores, mas ainda pequenos (Pequenos Tablets e Smartphones + largos, 600px para cima) */
-@media only screen and (min-width: 768px) {
-
-}
-
-/*Dispostivos Médios (desktop) */
-@media only screen and (min-width: 1024px) {
-
-}
-
-/* Dispostivos Largos (laptops/desktops, 992px para cima) */
-@media only screen and (min-width: 992px) {
-
-}
-
-/* Super Largos (Telas maiores laptops, desktops e até TVs, 1200px para cima) */
-@media only screen and (min-width: 1200px) {
-
-}
-
