@@ -1,5 +1,5 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import {ordering, searchName, filterEspecies} from "./data.js";
+import {ordering, searchName, filterEspecies, filterGender, filterStatus} from "./data.js";
 
 
 const searchInput = document.getElementById("search-input");
@@ -38,6 +38,42 @@ function sortCharacter(evt) {
 }
 
 document.getElementById("ordering-AZ").addEventListener("change", sortCharacter);
+
+
+//FUNÇÃO DE SELECIONAR PELO GÊNERO
+function sortGender(evt) {
+  evt.preventDefault();
+  const sortBy = filterGender(data.results, evt.target.value);
+  showCards(sortBy);
+}
+
+document.getElementById("filter-gender").addEventListener("change", sortGender);
+
+//FUNÇÃO DE SELECIONAR PELO STATUS
+function sortStatus(evt) {
+  evt.preventDefault();
+  const sortBy = filterStatus(data.results, evt.target.value);
+  showCards(sortBy);
+}
+
+document.getElementById("filter-status").addEventListener("change", sortStatus);
+
+//FUNÇÃO DE SELECIONAR PELA ESPÉCIE
+function sortSpecies(evt) {
+  evt.preventDefault();
+  const sortBy = filterEspecies(data.results, evt.target.value);
+  showCards(sortBy);
+}
+
+document.getElementById("filter-species").addEventListener("change", sortSpecies);
+
+
+//função de recarregar a página
+var btn = document.querySelector("#clear");
+btn.addEventListener("click", function () {
+
+  location.reload();
+});
 
 
 //função de recarregar a página
