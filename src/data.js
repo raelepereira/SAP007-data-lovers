@@ -49,11 +49,11 @@ export const filterStatus = (data, status) => {
 
 //FUNÇÃO ESCOLHER PELA ESPÉCIE
 export const filterEspecies = (data, especie) => {
-  if (especie === "Humano") {
+  if (especie === "Human") {
     return data.filter(item => {
       return item.species === 'Human';
     })
-  } else if (especie === "Humanoide") {
+  } else if (especie === "Humanoid") {
     return data.filter(item => {
       return item.species === 'Humanoid';
     })
@@ -71,31 +71,11 @@ export const filterEspecies = (data, especie) => {
     })
   } else if (especie === "Robot") {
     return data.filter(item => {
-      return item.species === 'Humanoid';
+      return item.species === 'Robot';
     })
   } else if (especie === "Unknown") {
     return data.filter(item => {
       return item.species === 'unknown';
-    })
-  } else if (especie === "Poopybutthole") {
-    return data.filter(item => {
-      return item.species === 'Poopybutthole';
-    })
-  } else if (especie === "Vampire") {
-    return data.filter(item => {
-      return item.species === 'Vampire';
-    })
-  } else if (especie === "Cronenberg") {
-    return data.filter(item => {
-      return item.species === 'Cronenberg';
-    })
-  } else if (especie === "Disease") {
-    return data.filter(item => {
-      return item.species === 'Disease';
-    })
-  } else if (especie === "Parasite") {
-    return data.filter(item => {
-      return item.species === 'Parasite';
     })
   }
 }
@@ -107,11 +87,7 @@ export const filterEspecies = (data, especie) => {
     return searchResults;
   }
 
-//cálculo agregado
-  export const showStats = (data,typeData, condition) => data.reduce((initialType, totalType) => {
-    return initialType + (totalType[typeData] === condition);
-},0)
-console.log(showStats);
+
 
   
 
