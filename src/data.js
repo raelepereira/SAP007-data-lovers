@@ -107,6 +107,11 @@ export const filterEspecies = (data, especie) => {
     return searchResults;
   }
 
+//cálculo agregado
+  export const showStats = (data,typeData, condition) => data.reduce((initialType, totalType) => {
+    return initialType + (totalType[typeData] === condition);
+},0)
+console.log(showStats);
 
   
 

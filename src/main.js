@@ -4,6 +4,7 @@ import {ordering, searchName, filterEspecies, filterGender, filterStatus} from "
 
 const searchInput = document.getElementById("search-input");
 const getSpescies = document.getElementById("filter-spescies");
+const showCalculation = document.getElementById("show-calculation");
 
 function showCards(data) {
   document.getElementById('card-container').innerHTML = data.map((item) => `
