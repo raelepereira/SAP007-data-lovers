@@ -93,17 +93,3 @@ searchInput.addEventListener("keyup", searchByName);
 
 
 
- 
-
-
-
-/*
-const seletorGenero = document.getElementById("filter-gender"); // CONST COM O SELETOR
-
-seletorGenero.addEventListener("change", (event) => {
-  const filtroGenero = data.results.filter((item) => {
-    return item.gender === event.target.value
-  });
-  console.log(filtroGenero);
-});*/
-
