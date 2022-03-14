@@ -1,9 +1,10 @@
 import data from "./data/rickandmorty/rickandmorty.js";
-import {ordering, searchName, filterEspecies, filterGender, filterStatus} from "./data.js";
+import {sorting, searchName, filterEspecies, filterGender, filterStatus } from "./data.js";
 
 
 const searchInput = document.getElementById("search-input");
-const getSpescies = document.getElementById("filter-spescies");
+
+
 
 function showCards(data) {
   document.getElementById('card-container').innerHTML = data.map((item) => `
@@ -28,22 +29,24 @@ function showCards(data) {
   `).join("");
 }
 
+
 showCards(data.results);
 
 //FUNÇÃO DE ORDERNAR A-Z e Z-A 
 function sortCharacter(evt) {
   evt.preventDefault();
-  const sortBy = ordering(data.results, evt.target.value);
-  showCards(sortBy);  
+  const sortBy = sorting(data.results, evt.target.value);
+  showCards(sortBy);
 }
 
-document.getElementById("ordering-AZ").addEventListener("change", sortCharacter);
+document.getElementById("sorting-AZ").addEventListener("change", sortCharacter);
 
 
 //FUNÇÃO DE SELECIONAR PELO GÊNERO
 function sortGender(evt) {
   evt.preventDefault();
-  const sortBy = filterGender(data.results, evt.target.value);
+  const sortBy = filterGender(data.results, evt.target.value); // constante com o resultado do filtro 
+  document.getElementById("porcentageFiltro").innerHTML = (`The percentage of characters that match the filter is: ${(sortBy.length / 493 * 100).toFixed(2)} %`);
   showCards(sortBy);
 }
 
@@ -53,6 +56,7 @@ document.getElementById("filter-gender").addEventListener("change", sortGender);
 function sortStatus(evt) {
   evt.preventDefault();
   const sortBy = filterStatus(data.results, evt.target.value);
+  document.getElementById("porcentageFiltro").innerHTML = (`The percentage of characters that match the filter is: ${(sortBy.length / 493 * 100).toFixed(2)} %`);
   showCards(sortBy);
 }
 
@@ -62,6 +66,7 @@ document.getElementById("filter-status").addEventListener("change", sortStatus);
 function sortSpecies(evt) {
   evt.preventDefault();
   const sortBy = filterEspecies(data.results, evt.target.value);
+  document.getElementById("porcentageFiltro").innerHTML = (`The percentage of characters that match the filter is: ${(sortBy.length / 493 * 100).toFixed(2)} %`);
   showCards(sortBy);
 }
 
@@ -76,20 +81,18 @@ btn.addEventListener("click", function () {
 });
 
 
-//função de recarregar a página
-var btn = document.querySelector("#clear");
-btn.addEventListener("click", function() {
-    
-  location.reload();
-});
-
-
 //função de procurar pelo nome (input)
 function searchByName(e) {
   const charactersByName = searchName(data.results, e.target.value);
+  document.getElementById("porcentageFiltro").innerHTML = (`The percentage of characters that match the filter is: ${(charactersByName.length / 493 * 100).toFixed(2)} %`);
   showCards(charactersByName);
 }
 searchInput.addEventListener("keyup", searchByName);
 
 
 
+
+
+// function resultado(e) {
+//   console.log(sortBy.result.length);
+// }

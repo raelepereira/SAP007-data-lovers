@@ -1,12 +1,12 @@
 //FUNÇÃO DE ORDERNAR A-Z e Z-A
-  export const ordering = (data, sorted) => {
-  
-      if (sorted === "AZ") {  
-      return data.sort((a, b) => a.name < b.name ? -1 : 1)     
-    } else {
-      return data.sort((a, b) => a.name > b.name ? -1 : 1)
-   } 
-  };
+export const sorting = (data, sorted) => {
+
+  if (sorted === "AZ") {
+    return data.sort((a, b) => a.name < b.name ? -1 : 1)
+  } else {
+    return data.sort((a, b) => a.name > b.name ? -1 : 1)
+  }
+};
 
 
 //FUNÇÃO ESCOLHER POR GÊNERO
@@ -44,7 +44,7 @@ export const filterStatus = (data, status) => {
     return data.filter(item => {
       return item.status === 'unknown';
     })
-  } 
+  }
 }
 
 //FUNÇÃO ESCOLHER PELA ESPÉCIE
@@ -81,10 +81,7 @@ export const filterEspecies = (data, especie) => {
 }
 
 //função de procurar pelo nome (input)
-  export const searchName = (data, condition) => {
-    const searchResults = data.filter(n => n.name.toLowerCase().includes(condition.toLowerCase()));
-    return searchResults;
-  }
-
- 
-
+export const searchName = (data, condition) => {
+  const searchResults = data.filter(n => n.name.toLowerCase().includes(condition.toLowerCase()));
+  return searchResults;
+}

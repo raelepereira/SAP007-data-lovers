@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img//favicon.ico" type="image/x-icon">
   <title>Rick & Morty | Cards</title>
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
@@ -26,12 +26,13 @@
   </header>
 
   <main>
+
     <h1 class="titulo-menu">CHARACTERS</h1>
     <!--FILTROS-->
     <section class="menu">
       <p class="paragrafo">SORT BY:</p>
       <!--FILTRAR POR ORDEM ALFABÉTICA-->
-      <select id="ordering-AZ" class="select-az-za button">A-Z>
+      <select id="sorting-AZ" class="select-az-za button">A-Z>
         <option value="A-Z/Z-A" selected disabled>A-Z/Z-A</option>
         <option class="sel-az" value="AZ">Name: A-Z</option>
         <option class="sel-az" value="ZA">Name: Z-A</option>
@@ -67,7 +68,8 @@
       <!--INPUT PARA PESQUISAR POR NOME-->
       <input type="search" id="search-input" class="input" placeholder="search a character">
     </section>
-    <!--LOCAL DOS CARDS-->
+    <!--LOCAL DOS CARDS E PORCENTAGEM-->
+    <span id="porcentageFiltro" class="porcentageFiltro"></span>
     <section id="card-container" class="container-cards"></section>
   </main>
 
