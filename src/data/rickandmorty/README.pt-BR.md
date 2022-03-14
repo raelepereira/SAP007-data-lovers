@@ -6,7 +6,6 @@ grupo que quer ser capaz de interagir e ver as informações dos personagens e d
 série em geral.
 
 ## Constatações
-
 Pesquisamos rapidamente as informações de que nossos usuários precisam e
 descobrimos que os dados mais interessantes para eles são:
 
