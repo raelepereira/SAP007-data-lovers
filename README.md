@@ -20,9 +20,11 @@
 
 A série trata das aventuras de Rick Sanchez, um cientista brilhante (com sérios problemas de alcoolismo) e seu sobrinho Morty Smith (não tão brilhante) através de galáxias e realidades paralelas onde encontram todos os tipos de personagens estranhos e, inclusive, outras versões de si mesmos. 
 
+O objetivo principal deste projeto é que aprenda a desenhar e construir uma interface web onde se possa visualizar e manipular dados, entendendo o que o usuário necessita.
+
 ## 2. Definição de produto
 
-Aplicativo web adaptado para dispsitivos Mobile, criado para fãs e pessoas que desejam saber mais sobre a série Rick and Morty, onde podem encontrar todos os personagens da série, filtrar os personagens por ordem alfabética, por gênero, status, espécie, pesquisar pelo nome e mais.
+Aplicativo web adaptado para dispositivos móveis, criado para fãs e pessoas que desejam saber mais sobre a série Rick and Morty, onde podem encontrar todos os personagens da série, filtrar os personagens por ordem alfabética, gênero, status, espécie, pesquisar pelo nome e mais.
 
 Os filtros “Status”, “Gender”, "Spescies" e o input de pesquisar pelo nome fornecem também o percentual de personagens que possuem a característica selecionada.
 
