@@ -1,7 +1,7 @@
 # Data Lovers
 
 <h1 align="center">Rick e Morty :alien:</h1>
-<h3 align="center"> Projeto Data Lovers desenvolvido no bootcamp de Front-End da SAP006 Laboratória :yellow_heart:</h3><br>
+<h3 align="center"> Projeto Data Lovers desenvolvido no bootcamp de Front-End da SAP007 Laboratória :yellow_heart:</h3><br>
 
 ## Índice
 
@@ -12,7 +12,7 @@
 - [5. Histórias de Usuários](#pencil2-histórias-de-usuários) ✔
 - [6. Protótipos e organização dos arquivos](#art-protótipos) ✔
 - [7. Resultados](#%EF%B8%8F-resultados) ✔
-- [8s. Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
+- [8. Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
 ---
 
 ---
@@ -82,7 +82,7 @@ O projeto foi realizado por duas estudantes front-end no prazo de 6 semanas. O p
 
 ---
 
-# :%EF%B8%8F: 7. Resultados
+## ✔️ 7. Resultados
 
 ![img](./img/deploy.png) // colocar imagens das páginas finais mpostrando os filtros e porcentagens 
 
