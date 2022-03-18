@@ -98,22 +98,23 @@ Para o protótipo de alta fidelidade foi usado o Figma, tendo como base a paleta
 
 //organizar as pastas 
 .
-├── 📁 src
-|   ├── 📁 data 
-|   |   └── 📁 rickandmorty
-|   |       ├── 📄 rickandmorty.js
-|   |       ├── 📄 rickandmorty.json
-|   |       └── 📄 README.md   
-|   ├── 📁 img
-|   ├── 📄 data.js
-|   ├── 📄 index.html
-|   ├── 📄 main.js
-|   └── 📄 style.css
-├── 📁 test
-|   └── 📄 data.spec.js
-├── 📁 img
-├── 📄 README.md
-├── 📄 package.json
+├── 📁 src <br>
+|   ├── 📁 data  <br>
+|   |   └── 📁 rickandmorty <br>
+|   |       ├── 📄 rickandmorty.js <br>
+|   |       ├── 📄 rickandmorty.json <br>
+|   |       ├── 📄 README.md   <br>
+|   |       └── 📄 README.md <br>
+|   ├── 📁 img <br>
+|   ├── 📄 data.js <br>
+|   ├── 📄 index.html <br>
+|   ├── 📄 main.js <br>
+|   └── 📄 style.css <br>
+├── 📁 test <br>
+|   └── 📄 data.spec.js <br>
+├── 📁 img <br>
+├── 📄 README.md <br>
+├── 📄 package.json <br>
 
  ---
 
