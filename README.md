@@ -1,6 +1,4 @@
-# Data Lovers
-
-<h1 align="center">Rick e Morty :alien:</h1>
+<h1 align="center">Data Lovers - Rick e Morty :alien:</h1>
 <h3 align="center"> Projeto Data Lovers desenvolvido no bootcamp de Front-End da SAP006 Laboratória :yellow_heart:</h3><br>
 
 ## Índice
