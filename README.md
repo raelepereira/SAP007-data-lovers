@@ -11,9 +11,8 @@
 - [4. Planejamento e Organização](#memo-planejamento-e-organização) ✔
 - [5. Histórias de Usuários](#pencil2-histórias-de-usuários) ✔
 - [6. Protótipos e organização dos arquivos](#art-protótipos) ✔
-- [7. Estrutura dos Principais Arquivos](#file_folder-estrutura-dos-principais-arquivos) ✔
-- [8. Resultados](#%EF%B8%8F-resultados) ✔
-- [9. Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
+- [7. Resultados](#%EF%B8%8F-resultados) ✔
+- [8s. Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
 ---
 
 ---
@@ -83,48 +82,13 @@ O projeto foi realizado por duas estudantes front-end no prazo de 6 semanas. O p
 
 ---
 
-## :file_folder: 6. Protótipos 
-
-O processo de criação foi pensado buscando um layout intuitivo, clean e de fácil compreensão, que mostrasse apenas as informações principais, como imagem/especificações dos personagens, opções de filtro e estatísticas.
-
-Para o protótipo de alta fidelidade foi usado o Figma, tendo como base a paleta de cores inspirada na série, definindo assim os cards e a diagramação do site.
-
-![img](./img/layout.png) // colocar imagem do figma
-
----
-
-## :file_folder: 7. Estrutura dos Principais Arquivos
-
-
-//organizar as pastas 
-.
-├── 📁 src <br>
-|   ├── 📁 data  <br>
-|   |   └── 📁 rickandmorty <br>
-|   |       ├── 📄 rickandmorty.js <br>
-|   |       ├── 📄 rickandmorty.json <br>
-|   |       ├── 📄 README.md   <br>
-|   |       └── 📄 README.md <br>
-|   ├── 📁 img <br>
-|   ├── 📄 data.js <br>
-|   ├── 📄 index.html <br>
-|   ├── 📄 main.js <br>
-|   └── 📄 style.css <br>
-├── 📁 test <br>
-|   └── 📄 data.spec.js <br>
-├── 📁 img <br>
-├── 📄 README.md <br>
-├── 📄 package.json <br>
-
- ---
-
-# :%EF%B8%8F: 8. Resultados
+# :%EF%B8%8F: 7. Resultados
 
 ![img](./img/deploy.png) // colocar imagens das páginas finais mpostrando os filtros e porcentagens 
 
 ---
 
-## :woman_technologist: Sobre as desenvolvedoras
+## :woman_technologist: 8. Sobre as desenvolvedoras
 
 * ### [Raele Pereira](https://www.linkedin.com/in/raele-pereira-59b804201/)
 
