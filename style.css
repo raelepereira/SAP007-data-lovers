@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(0, 0, 0);
+}
+
+nav{
+  max-width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+nav .cabecalho-navegacao{
+  display: flex;
+  justify-content: center;
+}
+
+nav a{
+  font-family: "Shadows Into Light";
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #33dd50;
+  font-weight: bold;
+  text-decoration:none;
+  margin: 1rem;
+  transition: 2s;
+  text-shadow: 0px 0px 20px #2de947, 0px 0px 25px #2de947;
+}
+
+nav a:hover{
+  transition: 1s;
+  font-size: 3rem;
+  color: rgb(27, 163, 152);
+}
+
+img {
+  display: block;
+  margin: auto;
+}
+
+main{
+  max-width: 1000px;
+  margin: auto;
+}
+
+.titulo-menu  {
+  font-size: 65px;
+  margin: auto;
+  font-weight:200;
+  font-family: 'Shadows Into Light', cursive;
+  color:#2de947;
+  max-width: 1000px;
+  text-align: center;
+  text-shadow: 0px 0px 20px #2de947, 0px 0px 25px #2de947;
+}
+
+p {
+  color:white;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 1.5em;;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+.menu section {
+  border: none;
+  margin: 50px;
+}
+
+.button, .input {
+  font-family:'Architects Daughter', cursive;
+  font-size: 18px;
+  background-color: white;
+  color:black;
+  border-radius: 5px;
+}
+ 
+.input {
+  width: 185px;
+}
+
+.container-cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 15px;
+  max-width: 90%;
+  margin: auto;
+}
+
+.porcentageFiltro{
+  color: white;
+  border:2px rgb(27, 163, 152);
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 20px;
+  margin: 2% 20% 1% 19%;
+  border: 2px solid #2de947;
+  border-radius: 5px; 
+}
+
+section .card {
+  margin: 25px;
+  border: solid 4px #4fd361;
+  border-radius: 25px;
+  width: 200px;
+  background-color: #4fd361;
+  text-align: center;
+}
+
+
+.card-img {
+  border-radius: 7%;
+  width: 180px;
+  margin: 15px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.name {
+  text-align: center;
+  margin: 10px;
+  margin-bottom: 5px;
+  font-family:'Architects Daughter', cursive;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+  color: #000000; 
+}
+
+.info {
+  text-align: center;
+  margin: 10px;
+  font-family:'Architects Daughter', cursive;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.info p {
+  color: black;
+}
+
+footer {
+  padding: 1rem;
+  background-image: linear-gradient(to bottom, black,#4fd361);
+  text-align: center;
+  font-family: 'Architects Daughter', cursive;
+  font-size: 18px;
+  color: #000000;
+}
+
+h2 {
+  margin-top: 100px;
+  font-size:20px;
+}
+
+.social-media {
+  margin: 2px;
+}
+
+.social-media-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-media-list-item {
+  display: block;
+  margin: 1rem;
+}
+
+.social-media-list-item img {
+  width: 100%;
+  max-width: 20px;
+}
+
+
+
+@media only screen and (max-width: 850px) {
+
+  main{
+    margin: auto;
+  }
+  
+  .menu{
+    display: block;
+    text-align: center;
+  }
+
+  .menu select{
+    margin: 8px;
+  }
+  
+  nav{
+    margin-bottom: 10px;
+  }
+
+  nav a{
+    font-size: 30px;
+  }
+
+  img{
+    max-width: 100%;
+  }
+
+}
+
+@media only screen and (max-width: 500px){
+
+  nav a{
+    font-size: 20px;
+  }
+
+}
+
+@media only screen and (max-width: 400px){
+
+  nav a{
+    font-size: 15px;
+  }
+
+}

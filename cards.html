@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img//favicon.ico" type="image/x-icon">
+  <title>Rick &#38; Morty | Cards</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <ul class="cabecalho-navegacao">
+        <li><a href="./index.html"> Home</a></li>
+        <li><a href="https://www.imdb.com/title/tt2861424/episodes"> Seasons</a></li>
+        <li><a href="https://www.imdb.com/title/tt2861424/episodes?year=2017"> Episodes</a></li>
+        <li><a href="https://www.adultswim.com/streams/rick-and-morty"> Watch Now</a></li>
+      </ul>
+    </nav>
+    <img src="./img/imagem-cabecalho.gif" alt="Rick and Morty">
+  </header>
+
+  <main>
+    <h1 class="titulo-menu">CHARACTERS</h1>
+    <!--FILTROS-->
+    <section class="menu">
+      <p class="paragrafo">SORT BY:</p>
+      <!--FILTRAR POR ORDEM ALFABÉTICA-->
+      <select id="sorting-AZ" class="select-az-za button">
+        <option value="A-Z/Z-A" selected disabled>A-Z/Z-A</option>
+        <option class="sel-az" value="AZ">Name: A-Z</option>
+        <option class="sel-az" value="ZA">Name: Z-A</option>
+      </select>
+      <!--FILTRAR POR GÊNERO-->
+      <select id="filter-gender" class="selec-genero button">
+        <option value="genero" selected disabled>⚧ Gender</option>
+        <option class="sel-genero" value="Male">♂️ Male</option>
+        <option class="sel-genero" value="Female">♀️ Female</option>
+        <option class="sel-genero" value="Genderless">Genderless</option>
+        <option class="sel-genero" value="unknown">❓ Unknown</option>
+      </select>
+      <!--FILTRAR POR STATUS DE VIDA-->
+      <select id="filter-status" class="sel-status button">
+        <option value="status" selected disabled>❓ Status</option>
+        <option class="sel-status" value="Alive">💚 Alive</option>
+        <option class="sel-status" value="Dead">☠️ Dead</option>
+        <option class="sel-status" value="Unknown">❓ Unknown</option>
+      </select>
+      <!--FILTRAR POR ESPÉCIE-->
+      <select id="filter-species" class="sel-especie button">
+        <option value="especie" selected disabled>Species</option>
+        <option class="sel-status" value="Human">Human</option>
+        <option class="sel-status" value="Humanoid">Humanoid</option>
+        <option class="sel-status" value="Animal">Animal</option>
+        <option class="sel-status" value="Alien">Alien</option>
+        <option class="sel-status" value="mytholog">Mytholog</option>
+        <option class="sel-status" value="Robot">Robot</option>
+        <option class="sel-status" value="Unknown">Unknown</option>
+      </select>
+      <!--BOTÃO PARA LIMPAR-->
+      <button id="clear" class="button">Clear</button>
+      <!--INPUT PARA PESQUISAR POR NOME-->
+      <input type="search" id="search-input" class="input" placeholder="search a character">
+    </section>
+    <!--LOCAL DOS CARDS E PORCENTAGEM-->
+    <section id="porcentageFiltro" class="porcentageFiltro"></section>
+    <section id="card-container" class="container-cards"></section>
+  </main>
+
+  <footer class="rodape">
+    <h2 class="rodape-texto">© 2022 Projeto desenvolvido por Raele Pereira e Raynara Pimenta</h2>
+    <nav class="social-media">
+      <ul class="social-media-list">
+        <li class="social-media-list-item">
+          <a href="https://github.com/raelepereira">
+            <img src="./img/github.png" alt="github-raele" />
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a href="https://github.com/raynarapimenta">
+            <img src="./img/github.png" alt="github-raynara" />
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a href="https://www.linkedin.com/in/raele-pereira-59b804201/">
+            <img src="./img/linkdin.png" alt="linkedin-raele" />
+          </a>
+        </li>
+        <li class="social-media-list-item">
+          <a href="https://www.linkedin.com/in/raynara-pimenta-308b2514b/">
+            <img src="./img/linkdin.png" alt="linkedin-raynara" />
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="main.js" type="module"></script>
+</body>
+
+</html>
