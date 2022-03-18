@@ -5,14 +5,15 @@
 
 ## Índice
 
-- [1. Sobre Rick and Morty](#gun-sobre-rick-and-morty) ✔
-- [2. O Projeto](#computer-o-projeto) ✔
-- [3. Definição do Produto](#dart-definição-do-produto) ✔
-- [4. Planejamento e Organização](#memo-planejamento-e-organização) ✔
-- [5. Histórias de Usuários](#pencil2-histórias-de-usuários) ✔
-- [6. Protótipos e organização dos arquivos](#art-protótipos) ✔
-- [7. Resultados](#%EF%B8%8F-resultados) ✔
-- [8. Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras)
+- [1. Sobre Rick and Morty](#gun-sobre-rick-and-morty) 
+- [2. O Projeto](#computer-o-projeto) 
+- [3. Definição do Produto](#dart-definição-do-produto) 
+- [4. Planejamento e Organização](#memo-planejamento-e-organização) 
+- [5. Histórias de Usuários](#pencil2-histórias-de-usuários) 
+- [6. Protótipos e organização dos arquivos](#art-protótipos) 
+- [7. Resultados](#%EF%B8%8F-resultados) 
+- [8. Tecnologias Utilizadas](#robot-8-tecnologias-utilizadas)
+- [9. Sobre as desenvolvedoras](#woman_technologist-sobre-as-desenvolvedoras) 
 ---
 
 ---
@@ -49,7 +50,7 @@ Dessa forma, facilitaria o conhecimento da série para os curiosos e o aprofunda
 
 O projeto foi realizado por duas estudantes front-end no prazo de 6 semanas. O primeiro desafio encontrado foi fazer um planejamento no qual todas pudessem colaborar com ideias, referências e funcionalidades. Para isso, a organização e o planejamento foram feitos em conjunto através do Trello. Essa ferramenta também foi utilizada para compartilhar referências e atribuir as tarefas individuais a serem feitas por cada uma.
 
-![imagem-trello](./img/imagem-trello.png) 
+![imagem-trello](../SAP007-data-lovers/src/img/imagem-trello.png)
 
 ---
 
@@ -82,13 +83,41 @@ O projeto foi realizado por duas estudantes front-end no prazo de 6 semanas. O p
 
 ---
 
+## :art: 6. Protótipos
+
+O processo de criação foi pensado buscando um layout intuitivo e de fácil compreensão, que mostrasse apenas as informações principais, como imagem/especificações dos personagens, opções de filtro e estatísticas.
+
+![img](../SAP007-data-lovers/src/img/Prot%C3%B3tipo%20Data%20Lovers-Cards.png)
+![img](../SAP007-data-lovers/src/img/Prot%C3%B3tipo%20Data%20Lovers-Cards.png)
+
+---
 ## ✔️ 7. Resultados
 
-![img](./img/deploy.png) // colocar imagens das páginas finais mpostrando os filtros e porcentagens 
+![img](gif da tela inicial mudando para tela dos cards)
+
+<br><br>
+
+![img](.//src/img/WhatsApp%20Image%202022-03-18%20at%2015.22.57.jpeg)
+
+<br><br>
+
+![img](.//src/img/WhatsApp%20Image%202022-03-18%20at%2015.22.59.jpeg)
+
+---
+## :robot: 8. Tecnologias Utilizadas
+
+| Ferramenta | Descrição |
+| --- | --- |
+| `HTML 5` | Linguagem de marcação |
+| `CSS3` | Linguagem de estilização |
+| `JavaScript` |  Linguagem de programação interpretada estruturada|
+| `Jest` | Framework de teste em JavaScript|
+| `Node.js` | Software de execução de códigos JavaScript|
+| `Git e GitHub` | Sistemas de controle de versões distribuídos|
 
 ---
 
-## :woman_technologist: 8. Sobre as desenvolvedoras
+## :woman_technologist: 9. Sobre as desenvolvedoras
 
 * ### [Raele Pereira](https://www.linkedin.com/in/raele-pereira-59b804201/)
 
