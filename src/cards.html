@@ -11,7 +11,6 @@
 </head>
 
 <body>
-
   <header>
     <nav>
       <ul class="cabecalho-navegacao">
@@ -26,16 +25,14 @@
 
   <main>
     <h1 class="titulo-menu">CHARACTERS</h1>
-    <!--FILTROS-->
     <section class="menu">
       <p class="paragrafo">SORT BY:</p>
-      <!--FILTRAR POR ORDEM ALFABÉTICA-->
       <select id="sorting-AZ" class="select-az-za button">
         <option value="A-Z/Z-A" selected disabled>A-Z/Z-A</option>
         <option class="sel-az" value="AZ">Name: A-Z</option>
         <option class="sel-az" value="ZA">Name: Z-A</option>
       </select>
-      <!--FILTRAR POR GÊNERO-->
+  
       <select id="filter-gender" class="selec-genero button">
         <option value="genero" selected disabled>⚧ Gender</option>
         <option class="sel-genero" value="Male">♂️ Male</option>
@@ -43,14 +40,14 @@
         <option class="sel-genero" value="Genderless">Genderless</option>
         <option class="sel-genero" value="unknown">❓ Unknown</option>
       </select>
-      <!--FILTRAR POR STATUS DE VIDA-->
+
       <select id="filter-status" class="sel-status button">
         <option value="status" selected disabled>❓ Status</option>
         <option class="sel-status" value="Alive">💚 Alive</option>
         <option class="sel-status" value="Dead">☠️ Dead</option>
         <option class="sel-status" value="Unknown">❓ Unknown</option>
       </select>
-      <!--FILTRAR POR ESPÉCIE-->
+
       <select id="filter-species" class="sel-especie button">
         <option value="especie" selected disabled>Species</option>
         <option class="sel-status" value="Human">Human</option>
@@ -61,12 +58,11 @@
         <option class="sel-status" value="Robot">Robot</option>
         <option class="sel-status" value="Unknown">Unknown</option>
       </select>
-      <!--BOTÃO PARA LIMPAR-->
+    
       <button id="clear" class="button">Clear</button>
-      <!--INPUT PARA PESQUISAR POR NOME-->
       <input type="search" id="search-input" class="input" placeholder="search a character">
     </section>
-    <!--LOCAL DOS CARDS E PORCENTAGEM-->
+
     <section id="porcentageFiltro" class="porcentageFiltro"></section>
     <section id="card-container" class="container-cards"></section>
   </main>

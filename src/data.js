@@ -1,4 +1,3 @@
-//FUNÇÃO DE ORDERNAR A-Z e Z-A
 export const sorting = (data, sorted) => {
 
   if (sorted === "AZ") {
@@ -8,8 +7,6 @@ export const sorting = (data, sorted) => {
   }
 };
 
-
-//FUNÇÃO ESCOLHER POR GÊNERO
 export const filterGender = (data, genero) => {
   if (genero === "Male") {
     return data.filter(item => {
@@ -30,7 +27,6 @@ export const filterGender = (data, genero) => {
   }
 }
 
-//FUNÇÃO ESCOLHER POR STATUS
 export const filterStatus = (data, status) => {
   if (status === "Alive") {
     return data.filter(item => {
@@ -47,7 +43,6 @@ export const filterStatus = (data, status) => {
   }
 }
 
-//FUNÇÃO ESCOLHER PELA ESPÉCIE
 export const filterEspecies = (data, especie) => {
   if (especie === "Human") {
     return data.filter(item => {
@@ -80,7 +75,6 @@ export const filterEspecies = (data, especie) => {
   }
 }
 
-//função de procurar pelo nome (input)
 export const searchName = (data, condition) => {
   const searchResults = data.filter(n => n.name.toLowerCase().includes(condition.toLowerCase()));
   return searchResults;

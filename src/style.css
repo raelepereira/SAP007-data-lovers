@@ -87,6 +87,10 @@ p {
   color:black;
   border-radius: 5px;
 }
+
+#clear {
+  width: 80px
+}
  
 .input {
   width: 185px;
