@@ -23,7 +23,6 @@ function showCards(data) {
       <p class="list-item">Appears in: ${item.episode.length} episodes</p>
       <p class="list-item">Origin: ${item.origin.name}</p>
     </section>
-  </section>
       
     </section>
   `).join("");
@@ -89,10 +88,3 @@ function searchByName(e) {
 }
 searchInput.addEventListener("keyup", searchByName);
 
-
-
-
-
-// function resultado(e) {
-//   console.log(sortBy.result.length);
-// }

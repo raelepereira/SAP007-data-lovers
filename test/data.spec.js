@@ -29,6 +29,9 @@ const characters = [
 ]
 
 
+const [Rick, Morty, Summer] = characters
+console.log(Morty, Rick, Summer)
+
 
 describe("filtroGenero", () => {
   it("Deverá ser uma função", () => {
@@ -40,3 +43,4 @@ describe("filtroGenero", () => {
     expect(filterGender(characters, "Female")).toEqual(retornoPersonagens)
   })
 });
+
