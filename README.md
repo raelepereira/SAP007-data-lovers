@@ -48,7 +48,7 @@ Dessa forma, facilitaria o conhecimento da série para os curiosos e o aprofunda
 
 O projeto foi realizado por duas estudantes front-end no prazo de 6 semanas. O primeiro desafio encontrado foi fazer um planejamento no qual todas pudessem colaborar com ideias, referências e funcionalidades. Para isso, a organização e o planejamento foram feitos em conjunto através do Trello. Essa ferramenta também foi utilizada para compartilhar referências e atribuir as tarefas individuais a serem feitas por cada uma.
 
-![imagem-trello](../SAP007-data-lovers/src/img/imagem-trello.png)
+![imagem-trello](imagem-trello.png)
 
 ---
 
