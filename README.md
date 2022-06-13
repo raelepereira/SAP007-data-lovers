@@ -31,7 +31,7 @@ Entre momentos hilários e reflexões interessantes sobre a vida, Rick & Morty a
 
 Data Lovers é um guia para os fãs dessa instigante animação, com ele é possível encontrar os personagens da série e filtrá-los de acordo com status e gênero, para que o usuário descubra os episódios em que aparecem e possa escolher um para assistir. Também é possível pesquisar por nome e ordenar alfabeticamente.
 Assim, foram feitas alterações e incrementos no projeto para que ele se adequasse melhor à necessidade de usuário dentro do prazo estimado pelo desafio.
-Para acessar o site, clique [Aqui]([http://exemplo.com/](https://raelepereira.github.io/SAP007-data-lovers/))
+Para acessar o site, clique [Aqui](https://raelepereira.github.io/SAP007-data-lovers/)
 
 
 ---
